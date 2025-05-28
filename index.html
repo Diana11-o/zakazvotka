@@ -1,0 +1,99 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Заказать обратный звонок</title>
+  <link rel="stylesheet" href="stylecall.css"/>
+</head>
+<body>
+    <header class="site-header">
+        <div class="header-inner">
+          <div class="logo">CrystaliReflex</div>
+      
+          <nav class="main-nav">
+            <ul>
+              <li><a href="https://diana11-o.github.io/okompanii/">О компании</a></li>
+              <li><a href="#">Наша продукция</a></li>
+              <li><a href="#">Услуги</a></li>
+              <li><a href="#">Наши работы</a></li>
+              
+            </ul>
+          </nav>
+      
+          <button class="menu-toggle" aria-label="Toggle menu">
+            <span class="menu-text">Menu</span>
+            <span class="close-icon">&times;</span>
+          </button>
+        </div>
+      </header>
+
+      <section class="callback-section">
+        <div class="animated-side"> <!-- обертка с позицией relative -->
+          <div class="gradient-background"></div> 
+          
+        <div class="callback-container">
+          <h2>Заказать обратный звонок</h2>
+          <p>Оставьте свои данные, и мы свяжемся с вами в ближайшее время.</p>
+          <form class="callback-form">
+            <input type="text" name="name" placeholder="Ваше имя" required>
+            <input type="tel" name="phone" placeholder="Номер телефона" required>
+            <textarea name="message" placeholder="Комментарий (необязательно)"></textarea>
+            <button type="submit">Отправить</button>
+          </form>
+        </div>
+        <div id="callback-modal" class="modal">
+          <div class="modal-content">
+            <span class="close" id="close-callback">&times;</span>
+            <p>Спасибо! Наш менеджер свяжется с вами в ближайшее время.</p>
+          </div>
+        </div>
+      </section>
+
+
+  <footer class="site-footer">
+    <div class="footer-container">
+      <!-- Logo -->
+      <div class="footer-logo">
+        <img src="image/logo.svg" alt="GLAS ITALIA Logo">
+      </div>
+  
+      <!-- Контакты -->
+      <div class="footer-contacts">
+        <p><span>Садовая ул., 56</span><br>
+        <p><a href="mailto:CRYSTALIREFLEX.COM">CRYSTALIREFLEX.COM</a></p>
+        <p><a href="tel:+79500161702">TEL +79500161702</a></p>
+      </div>
+  
+      <!-- Newsletter -->
+      <div class="footer-newsletter">
+        <h3>Рассылка</h3>
+        <p>Подпишись, чтобы не пропустить обновления!</p>
+        <form id="newsletter-form">
+          <input type="email" placeholder="E-mail адрес" required>
+          <button type="submit">Продолжить</button>
+        </form>
+      </div>
+      <!-- Modal window -->
+<div id="modal" class="modal">
+  <div class="modal-content">
+      <span class="close">×</span>
+      <p>Вы первые узнаете о наших обновлениях!</p>
+  </div>
+</div>
+
+<div class="footer-socials">
+<a href="https://web.telegram.org/k/" target="_blank" rel="noopener noreferrer">
+  <img src="image/телеграм .png" alt="Telegram">
+</a>
+<a href="https://www.instagram.com/mi_____corazon/" target="_blank" rel="noopener noreferrer">
+  <img src="image/инставграм.jpeg" alt="Instagram">
+</a>
+<a href="https://vk.com/bumburumba1" target="_blank" rel="noopener noreferrer">
+  <img src="image/вк.png" alt="VK">
+</a>
+</div>
+  </footer>
+  <script src="script.js"></script>
+</body>
+</html>
